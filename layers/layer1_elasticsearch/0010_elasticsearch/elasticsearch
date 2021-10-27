@@ -1,0 +1,4 @@
+#!/bin/bash
+
+exec ${MFEXT_HOME}/opt/elasticsearch/opt/elasticsearch/bin/elasticsearch "$@"
+
