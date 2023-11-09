@@ -1,5 +1,5 @@
 | Name | Version | Layer |
 | --- | --- | --- |
-| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 7.17.12 | elasticsearch |
+| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.11.0 | elasticsearch |
 
 *(1 component)*
