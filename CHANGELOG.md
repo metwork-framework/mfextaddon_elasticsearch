@@ -1,5 +1,11 @@
 # release_2.1 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- bump elasticsearch to 7.17.16 (security update) (#21)
+
 ## v2.1.1 (2023-08-31)
 
 ### New Features
