@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=elasticsearch
-export VERSION=8.11.0
+export VERSION=8.12.0
 export EXTENSION=tar.gz
 export CHECKTYPE=MD5
-export CHECKSUM=b3d68fde028314d925e5e37d3b8e8c8b
+export CHECKSUM=fc4730eb9f749282359f6d2faf83490f
 DESCRIPTION=\
 Elasticsearch is a distributed, RESTful search and analytics engine
 WEBSITE=https://www.elastic.co/products/elasticsearch
@@ -21,3 +21,6 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/elasticsearch
 	mkdir -p $(PREFIX)/bin
 	cp elasticsearch $(PREFIX)/bin
+	#Remove jdk and modules/x-pack-ml for a lighter rpm
+	rm -rf $(PREFIX)/opt/elasticsearch/jdk
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-ml
