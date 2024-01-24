@@ -1,5 +1,11 @@
 # release_2.2 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- upgrade ES to 8.12.0 and lighten the rpm (#23)
+
 ## v2.2.0 (2023-11-28)
 
 ### New Features
