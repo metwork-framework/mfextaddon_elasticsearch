@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=elasticsearch
-export VERSION=8.12.0
+export VERSION=8.18.1
 export EXTENSION=tar.gz
 export CHECKTYPE=MD5
-export CHECKSUM=fc4730eb9f749282359f6d2faf83490f
+export CHECKSUM=6711a4cd1385902912a636f2b824bcdd
 DESCRIPTION=\
 Elasticsearch is a distributed, RESTful search and analytics engine
 WEBSITE=https://www.elastic.co/products/elasticsearch
