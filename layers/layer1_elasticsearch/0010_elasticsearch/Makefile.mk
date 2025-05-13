@@ -24,3 +24,6 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	#Remove jdk and modules/x-pack-ml for a lighter rpm
 	rm -rf $(PREFIX)/opt/elasticsearch/jdk
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-ml
+	#Also remove modules/x-pack-esql and x-pack-esql-core (requiring x-pack-ml)
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-esql
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-esql-core
